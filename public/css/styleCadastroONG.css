@@ -1,0 +1,27 @@
+img{
+    height: 200px;
+    width: 250px;
+    
+    margin: 15px;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    background-color: #eeeeee;
+}
+.animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.form-check{
+    color: grey;
+}
+
+
+.form-check-input:checked + .form-check-label {
+    color: black;
+   }

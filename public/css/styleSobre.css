@@ -1,0 +1,120 @@
+/* css-bar  */
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    color: #b491e8;
+    font-size: 17px;
+}
+
+.nav-active{
+    margin-left: 45px;
+}
+
+.icon-perfil{
+    color: #b491e8;
+    font-size: 33px;
+    
+}
+
+/* css-body */
+
+body{
+    background-color: #eeeeee;
+}
+/* 
+citação */
+.blockquote-footer{
+    background-color: #eeeeee;
+
+    
+}
+
+.cita{
+    width: 750px;
+    width: auto;
+    animation: alternate-reverse;
+}
+
+/* participar */
+.div-botoes{
+    background-color: #b491e8;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.col{
+    margin-top: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.b-option{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+.div-botoes-p{
+    padding: 15px;
+}
+
+/* equipe */
+
+.div-equipe{
+    background-color: black;
+    color: #eeeeee;
+    text-align: center;
+}
+figure img {
+    border-radius: 12px;
+}
+/* div-ajuda */
+
+.div-ajuda{
+    text-align: center;
+    padding: 15px;
+    /* background-color: #b491e8; */
+    color: black;
+   
+}
+
+.a-insta{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css-footer */
+.footer-footer{
+    background-color: black;
+    color: #b491e8;
+    text-align: center
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+#link_inst{
+    
+    color: #ddd;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styleInfoInstituição.css">
+    <link rel="icon" href="fotos/icone.png">
+
+    <title>Nome da ONG</title>
+</head>
+<body>
+
+     <!-- sombra-bar -->
+     <div class="shadow rounded">
+    
+        <!-- bar -->
+        <nav class="navbar navbar-dark navbar-expand-sm p-3">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand d-flex"><img src="fotos/logo.png"></a>
+               
+                <!-- itens-bar -->
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <div class="navbar-nav d-flex">
+                        <a href="index.html" class="nav-link active nav-active"><strong>Principal</strong></a>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </div>
+                </div>
+                <!-- icone de perfil -->
+                <a href="login.html" class="text-end"><i class="bi bi-person-circle icon-perfil"></i><a>
+                 <!-- botão com opção quando tela fica pequena -->
+                 <button class="navbar-toggler" type="button"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#menuNavbar">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+            </div>
+        </nav>
+        </div>
+
+        <!-- body -->
+        <div class="container">
+            <h1>Nome da ONG</h1>
+           
+           
+            <!-- Informações sobre a ONG -->
+            <div class="row row-cols-1 row-cols-lg-2 g-3">
+                <div class="col">
+                    <img src="fotos/exemploONG.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem dolorem optio voluptates aspernatur perferendis, reiciendis et exercitationem sunt culpa eligendi totam quaerat eos ex quos nulla eaque beatae quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae mollitia ea facilis ducimus sapiente nemo architecto quos, vitae aut odio illo voluptate fugit ex hic error distinctio dolor tempore in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo veritatis, illo consectetur, deleniti exercitationem, necessitatibus esse quis eum officiis eius accusantium. Unde nihil, alias iste odit mollitia quia perferendis?
+                    </p>
+
+                    <p class="endereco"><i class="bi bi-geo-alt-fill"></i> Av. 1 de junho, 209</p>
+                        </div>
+            </div>
+           
+
+             <!-- Causas que apoia -->
+             <div class="row row-cols-1 row-cols-lg-2 g-3">
+                
+                <div class="col">
+                    <!-- titulo -->
+                    <h1 class="text-center">Causas que apoia</h1>
+                    <div class="container">
+
+                        <div class="carousel slide carousel-dark" data-bs-ride="carousel" id="C-causas">
+                            <div class="carousel-indicators">
+                                <button class="active" data-bs-target="#C-causas"
+                                data-bs-slide-to="0"></button>
+                                <button class="" data-bs-target="#C-causas"
+                                data-bs-slide-to="1"></button>
+                                <button class="" data-bs-target="#C-causas"
+                                data-bs-slide-to="2"></button>
+                            </div>
+
+                            <!-- contem os slide -->
+                            <div class="carousel-inner">
+                                <!-- slide 1 -->
+                                <div class="carousel-item active">
+                                    <img src="fotos/cancerex.png" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h5>Combate ao câncer de mama</h5>
+                                        <p>Auxilia na prevenção</p>
+                                    </div>
+                                </div>
+
+                                <!-- slide 2 -->
+                                <div class="carousel-item">
+                                    <img src="fotos/moradorderua.jpg" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h5>Projeto vida nas ruas</h5>
+                                        <p>Oferece marmita para pessoas sem moradia</p>
+                                    </div>
+                                </div>
+
+                                <!-- slide 3 -->
+                                <div class="carousel-item">
+                                    <img src="fotos/voluntarios.jpg" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h5>Solidariedade</h5>
+                                        <p>Busca por voluntários que os ajudem</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- botão que volta -->
+                            <button class="carousel-control-prev" data-bs-target="#C-causas" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+
+                             <!-- botão que segue -->
+                             <button class="carousel-control-next" data-bs-target="#C-causas" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- botões de interação -->
+                <div class="col">
+                    <div class="container div-btn text-center py-5">
+                        <h1>Quero ajudar</h1>
+                        
+                        <!-- Botão para efetuar doação -->
+                        <button id="efetuar-doacao" class="btn btn-dark rounded-pill btn-lg">Efetuar Doação</button>
+                        <a href="formVoluntario.html" class="btn btn-dark rounded-pill btn-lg">Ser Voluntario</a>
+                    </div>
+                    
+                 
+                      
+                    </div>
+                    
+                </div>
+
+             </div>
+
+
+                <!-- carrosel de noticias -->
+                <div>
+                    <h1>Noticias</h1>
+                    <div class="container">
+
+                        <div class="carousel slide carousel-dark div-noticias" data-bs-ride="carousel" id="C-noticias">
+                            <div class="carousel-indicators">
+                                <button class="active" data-bs-target="#C-noticias"
+                                data-bs-slide-to="0"></button>
+                                <button class="" data-bs-target="#C-noticias"
+                                data-bs-slide-to="1"></button>
+                               
+                            </div>
+
+                            <!-- contem os slide -->
+                            <div class="carousel-inner">
+                                <!-- slide 1 -->
+                                <div class="carousel-item active">
+                                    <img src="fotos/campanhadoquilo.jpg" class="d-block w-50">
+                                    <div class="carousel-caption">
+                                        <h5>Campanha do quilo</h5>
+                                        <p>Estamos recolhendo alimentos na rua minas gerais o dia todo</p>
+                                    </div>
+                                </div>
+
+                                <!-- slide 2 -->
+                                <div class="carousel-item">
+                                    <img src="fotos/arrecadaçãodebrinquedos.jpg" class="d-block w-50">
+                                    <div class="carousel-caption">
+                                        <h5>Campanha brincar de novo</h5>
+                                        <p>Aceitando doações de brinquedos para dia das crianças</p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <!-- botão que volta -->
+                            <div class="container">
+                                <button class="carousel-control-prev" data-bs-target="#C-noticias" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+    
+                                 <!-- botão que segue -->
+                                 <button class="carousel-control-next" data-bs-target="#C-noticias" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- footer -->
+        <div class="p-4"></div>
+        <footer class="p-4">
+            Copyright © 2023 Doa Div. Todos os direitos reservados.
+            <br>
+            <a href="https://instagram.com/doadiv?igshid=ZDc4ODBmNjlmNQ=="><i class="bi bi-instagram"></i> Instagram  </a>
+            <br>
+            <a href="#"><i class="bi bi-linkedin"></i> Linkedin</a>
+        </footer>
+
+</body>
+</html>

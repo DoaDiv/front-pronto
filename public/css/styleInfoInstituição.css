@@ -1,0 +1,125 @@
+/* css-bar  */
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    color: #b491e8;
+    font-size: 17px;
+}
+
+.nav-active{
+    margin-left: 45px;
+}
+
+.icon-perfil{
+    color: #b491e8;
+    font-size: 33px;
+    
+}
+
+/* css-body */
+.nome-da-ONG{
+    text-align: center;
+    margin-top: 25px;
+    margin-top: 25px;
+    
+
+}
+
+.endereco{
+    padding: 20px;
+    font-size: 22px;
+    color: #646464;
+    padding-bottom: 5px;
+}
+
+#end-social{
+    text-decoration: none;
+}
+
+.inst-ONG{
+    padding: 20px;
+    font-size: 22px;
+    color: #646464;
+    padding-top: 5px;
+}
+
+.descricao{
+    padding: 20px;
+    text-align: justify;
+}
+
+
+/* carousel */
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.616); /* Preto com 50% de opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+
+
+
+  
+/* container com botões */
+#div-btn{
+    border-radius: 75%;
+    background-color: #b491e8;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto ;
+    margin-bottom:auto;
+
+}
+
+
+/* off-canvas */
+
+.img-perfil{
+    border-radius: 50%;
+  
+    
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfil-cont{
+text-align: center;
+}
+
+#option-perfil-sair{
+    text-decoration: none;
+    color: red;
+
+
+}
+
+.animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+
+/* css-footer */
+footer{
+    background-color: black;
+    color: #b491e8;
+    text-align: center
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}
+
+body{
+    background-color: #eeeeee;
+}

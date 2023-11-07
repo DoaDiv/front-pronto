@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="css/styleForm.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="fotos/icone.png">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+</head>
+<body>
+    <div class="shadow rounded">
+    <nav class="navbar navbar-dark navbar-expand-sm p-3">
+        <div class="container animacao">
+            <!-- logo -->
+            <a class="navbar-brand d-flex"><img src="fotos/logo.png"></a>
+        </div>
+    </nav>
+    </div>
+
+
+    <div class="container animacao">
+        <h1 class="mt-4">Formulario para se voluntariar</h1>
+        <h3 class="mb-5">Preencha os campos abaixo:</h3>
+        <form  action="/" method="post">
+            <div class="form-floating">
+                <input type="text" class="form-control" placeholder="Nome" name="nome" required>
+                <label class="form-label">Nome</label>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 my-3 g-2">
+                <div class="col form-floating">
+                    <input type="text" class="form-control" placeholder="Telefone" pattern="[0-9]{9}" name="telefone" required>
+                    <label class="form-label">Telefone</label>
+                </div>
+                <div class="col form-floating">
+                    <input type="text" class="form-control" placeholder="Confirmar telefone" pattern="[0-9]{9}" name="confirmar_telefone" required>
+                    <label class="form-label">Confirmar telefone</label>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-sm-2 my-3 g-2">
+                <div class="col form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                    <label class="form-label">Email</label>
+                </div>
+        
+                <div class="col form-floating">
+                    <input type="email" class="form-control" placeholder="Confirmar email" name="confirmar_email" required>
+                    <label class="form-label">Confirmar email</label>
+                </div>
+            </div>
+        
+            <div class="row row-cols-1 row-cols-sm-2 my-3 g-2">
+                <div class="col form-floating">
+                    <input type="date" class="form-control" placeholder="Data de nascimento" name="data_nascimento" required>
+                    <label class="form-label">Data de nascimento</label>
+                </div>
+        
+                <div class="col form-floating">
+                    <input type="text" class="form-control" placeholder="Outro telefone"  name="outro_telefone">
+                    <label class="form-label">Outro telefone</label>
+                </div>
+            </div>
+        
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Escreva sua disponibilidade de horário" name="disponibilidade" required></textarea>
+                <label class="form-label">Escreva sua disponibilidade de horário</label>
+            </div>
+        
+
+        
+              
+
+            <div class="form-check my-3">
+                <input class="form-check-input" type="checkbox" name="concordo" id="checkbox-normal" required>
+                <label class="form-check-label" for="checkbox-normal">Concordo em ceder meus dados</label>
+            </div>
+        
+            <div class="my-3 mt-2 text-center">
+                <a href="infoACCCOM.html" class="btn btn-dark d-inline-block rounded-pill px-5 m-5"><i class="bi bi-arrow-left-circle"></i>  Voltar</a>
+                <button class="btn btn-dark rounded-pill d-inline-block px-5 m-5" type="submit">Confirmar</button>
+            </div>
+            
+        
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const confirmButton = document.querySelector("button[type=submit]");
+                    const agreeCheckbox = document.querySelector(".form-check-input");
+                    const emailInput = document.getElementById("email");
+        
+                    const checkFormValidity = function() {
+                        if (agreeCheckbox.checked && emailInput.validity.valid) {
+                            confirmButton.removeAttribute("disabled");
+                        } else {
+                            confirmButton.setAttribute("disabled", "disabled");
+                        }
+                    };
+        
+                    confirmButton.setAttribute("disabled", "disabled");
+                    emailInput.addEventListener("input", checkFormValidity);
+                    agreeCheckbox.addEventListener("change", checkFormValidity);
+        
+                    confirmButton.onclick = function(event) {
+                        if (agreeCheckbox.checked && emailInput.validity.valid) {
+                            alert("Obrigado por se voluntariar. Entraremos em contato.");
+                            window.location.href = "index.html";
+                        } else {
+                            event.preventDefault();
+                        }
+                    };
+                });
+            </script>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* css-bar  */
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+.nav-link{
+    color: #b491e8;
+    font-size: 17px;
+}
+
+.nav-active{
+    margin-left: 45px;
+}
+
+.icon-perfil{
+    color: #b491e8;
+    font-size: 33px;
+    
+}
+
+/* css-body */
+
+body{
+    background-color: #eeeeee;
+}
+
+h5{
+    text-align: center;
+}
+
+.card-img-top{
+    height: 250px;
+    
+}
+
+
+/* off-canvas */
+
+.img-perfil{
+    border-radius: 50%;
+  
+    
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfil-cont{
+text-align: center;
+}
+
+#option-perfil-sair{
+    text-decoration: none;
+    color: red;
+
+
+}
+
+
+
+
+/* css-footer */
+.footer-footer{
+    background-color: black;
+    color: #b491e8;
+    text-align: center;
+    
+    
+   
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.card-text {
+  
+  text-overflow: ellipsis;
+  white-space-trim: initial ;
+  height: 5rem;
+  overflow:visible;
+  margin-top: auto;
+
+
+}
+

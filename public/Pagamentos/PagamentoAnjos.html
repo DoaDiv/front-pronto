@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styleInfoInstituição.css">
+    <link rel="icon" href="/public/fotos/icone.png">
+    <title>ACCCOM</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />  
+</head>
+<body>
+    <!-- sombra-bar -->
+    <div class="shadow rounded">
+        <!-- bar -->
+        <nav class="navbar navbar-dark navbar-expand-sm p-3">
+            <div class="container animacao">
+                <!-- logo -->
+                <a class="navbar-brand d-flex"><img src="../fotos/logo.png"></a>
+                <!-- itens-bar -->
+            
+            </div>
+        </nav>
+        
+    </div>
+    <title>ACCCOM</title>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        h5 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto; 
+        }
+        text-center {
+        text-align: center;
+         }
+
+        .btn{
+            justify-content: center;
+        }
+
+       
+    </style>
+    <div class="container animacao">
+        <div class="container">
+           
+            <h5 class="my-5">Utilize o QR code ou chave pix para efetuar doação da quantia desejada </h5>
+        </div>
+        <div class="container text-center">
+            <div id="temporizador" class="mt-4"></div>
+        </div>
+        <div class="container">
+            <img src="../fotos/qrcode-pix.png" class="img-fluid" style="width: 300px; height: 300px;">
+        </div>
+
+        <div class="me-5 ms-5 mt-3">
+            <div class="input-group">
+            <input type="text" value="16f1b78a-7c9c-4dfb-b8f1-9405f8a0d3b9" id="myInput" class="input-chave form-control">
+            <button onclick="myFunction()" class="btn btn-primary"><i class="bi bi-copy"></i> Copiar</button>
+            </div>
+            </div>
+        
+            <script>
+            function myFunction() {
+              /* Obtém o elemento input */
+              var copyText = document.getElementById("myInput");
+            
+              /* Seleciona o texto do elemento input */
+              copyText.select();
+              copyText.setSelectionRange(0, 99999); /* Para dispositivos móveis */
+            
+              /* Copia o texto dentro do elemento input */
+              navigator.clipboard.writeText(copyText.value);
+            
+              /* Alerta o texto copiado */
+              alert("Chave copiada: " + copyText.value);
+            }
+            </script>
+            
+            <div class="mx-5 text-center">
+            
+            <a href="/public/infoACCCOM.html" class="btn btn-dark m-5 btn-lg px-5 d-inline-block rounded-pill"><i class="bi bi-arrow-left-circle"></i>  Voltar</a>
+            </div>
+        
+    </div>
+    
+
+    <script>
+        function redirecionarParaIndex(){
+            window.location.href = "../index.html";
+        }
+        let tempoRestante = 10 * 60 * 1000;
+        const temporizador = document.getElementById('temporizador');
+    
+        function atualizarTemporizador(){
+            const minutos = Math.floor(tempoRestante / 60000);
+            const segundos = Math.floor((tempoRestante % 60000) / 1000);
+            temporizador.innerHTML = `Tempo restante: ${minutos} min ${segundos} seg`;
+    
+            if (tempoRestante <= 0){
+                clearInterval(interval); 
+                temporizador.innerHTML = "Tempo esgotado!";
+                redirecionarParaIndex();
+            } else {
+                tempoRestante -= 1000; 
+            }
+        }
+    
+      
+        const interval = setInterval(atualizarTemporizador, 1000);
+    </script>
+    
+  
+</body>
+</html>

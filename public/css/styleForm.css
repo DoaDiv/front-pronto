@@ -1,0 +1,55 @@
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+body{
+    animation: fadeInDown;
+}
+
+
+body.container{
+    animation-name: fadeInDown;
+
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    
+}
+
+
+.btn{
+    justify-content: center;
+    font-size: large;
+    background-color: black;
+    color: antiquewhite;
+    margin-top: 7px;
+    
+}
+
+.form-check{
+    color: grey;
+}
+
+
+.form-check-input:checked + .form-check-label {
+    color: black;
+   }
+   
+   .animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+body{
+    background-color: #eeeeee;
+}

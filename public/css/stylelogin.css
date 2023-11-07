@@ -1,0 +1,82 @@
+/* centralizar tudo no form */
+.container-formulario{
+    text-align:center;
+    margin: 60px;
+   
+    
+  
+ 
+}
+
+
+/* css pra centralizar input */
+.form-horizontal{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+
+
+
+input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-width: 50px;
+}
+
+.btns {
+    justify-content: center;
+    color:antiquewhite;
+    
+    
+    
+    
+}
+
+
+img{
+    height: 200px;
+    width: 250px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.btn{
+    width: 100%;
+}
+
+p {
+    color: black;
+}
+
+
+/* css-div-bem vindo */
+.bemVindo{
+    background-color: black;
+    color: #b491e8;
+    margin: 50px;
+    padding: 200px;
+    padding-inline: 100px;
+    
+    
+    
+}
+
+.p-bem{
+    color: #b491e8;
+}
+
+.animacao{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+body{
+    background-color: #eeeeee;
+}
